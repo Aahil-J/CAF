@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:lightcoral;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    min-height:100vh;
+    margin:0;
+    padding-top:40px;
+}
+
+
+/* Main Heading */
+.hehe {
+    margin-left:10px;
+    margin-right:50px;
+    margin-top: 130px;
+    margin-bottom:30px;
+    font-style:italic;
+    font-weight:100;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color:beige;
+}
+
+
+/* Main Container */
+.container{
+    background:#fff;
+    padding:30px;
+    border-radius:10px;
+    width:400px;
+    box-shadow:0 0 10px rgba(0,0,0,.2);
+}
+
+
+/* Sticky Search Area */
+.search-panel{
+    position:sticky;
+    top:0;
+    background:white;
+    z-index:1000;
+    padding-bottom:15px;
+}
+
+
+h2{
+    text-align:center;
+    margin-bottom:20px;
+}
+
+
+/* Search Input Area */
+.search-box{
+    position:relative;
+    margin-bottom:15px;
+}
+
+
+input{
+    width:100%;
+    padding:10px 35px 10px 10px;
+    font-size:16px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+
+/* Clear Button */
+.clear-btn{
+    position:absolute;
+    right:10px;
+    top:50%;
+    transform:translateY(-50%);
+    border:none;
+    background:none;
+    font-size:18px;
+    cursor:pointer;
+    color:#777;
+}
+
+
+.clear-btn:hover{
+    color:red;
+}
+
+
+/* Search Button */
+button.search-btn{
+    width:100%;
+    padding:10px;
+    background:#007BFF;
+    color:white;
+    border:none;
+    font-size:16px;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+
+button.search-btn:hover{
+    background:#0056b3;
+}
+
+
+/* Result Section */
+#result{
+    margin-top:20px;
+    padding:15px;
+    border-radius:5px;
+    background:#f8f8f8;
+    min-height:60px;
+}
+
+
+/* College Cards */
+.college-card{
+    background:white;
+    padding:10px;
+    margin-bottom:10px;
+    border-radius:5px;
+    box-shadow:0 0 5px rgba(0,0,0,0.1);
+}
+
+
+.college-card p{
+    margin:8px 0;
+}
+
+
+/* Error Message */
+.not-found{
+    color:red;
+    font-weight:bold;
+} 

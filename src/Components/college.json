@@ -1,0 +1,38 @@
+[
+    {
+        "id": 200,
+        "name": "PSG Tech",
+        "location": "Peelamedu, Coimbatore",
+        "course": "Computer Science"
+    },
+    {
+        "id": 190,
+        "name": "SRM",
+        "location": "Chennai",
+        "course": "Mechatronics"
+    },
+    {
+        "id": 180,
+        "name": "Kumaraguru",
+        "location": "Saravanampatti, Coimbatore",
+        "course": "Mechanical"
+    },
+    {
+        "id": 170,
+        "name": "Krishna College",
+        "location": "Kuniyamuthur, Coimbatore",
+        "course": "Electronics"
+    },
+    {
+        "id": 150,
+        "name": "PSGCAS",
+        "location": "Civil Aerodrome Post, Coimbatore",
+        "course": "Arts"
+    },
+    {
+        "id": 160,
+        "name": "Anna University",
+        "location": "Chennai",
+        "course": "Information Technology"
+    }
+]
