@@ -59,32 +59,49 @@ function College() {
       <div className="container">
         <h2>College Availability Finder</h2>
 
-        <div className="search-box">
-          <input
-            type="text"
-            id="searchBox"
-            placeholder="Cut-off / SHOW COLLEGES"
-            value={search}
-            onChange={(e) => setSearch(e.target.value)}
-            onKeyDown={(e) => {
-              if (e.key === "Enter") searchCollege();
-            }}
-          />
+        <div className="search-panel">
+          <div className="search-box">
+            <input
+              type="text"
+              id="searchBox"
+              aria-label="Cut-off or SHOW COLLEGES"
+              placeholder="Cut-off / SHOW COLLEGES"
+              value={search}
+              onChange={(e) => setSearch(e.target.value)}
+              onKeyDown={(e) => {
+                if (e.key === "Enter") searchCollege();
+              }}
+            />
 
-          <button className="clear-btn" onClick={clearSearch}>
-            ✖
+            <button
+              type="button"
+              className="clear-btn"
+              onClick={clearSearch}
+              aria-label="Clear search"
+              title="Clear search"
+            >
+              ✖
+            </button>
+          </div>
+
+          <button
+            type="button"
+            className="search-btn"
+            onClick={searchCollege}
+          >
+            Search
           </button>
         </div>
 
-        <button className="search-btn" onClick={searchCollege}>
-          Search
-        </button>
-
         <div id="result">
-          {message && <h3>{message}</h3>}
+          {message && (
+            <h3 className={results.length === 0 ? "not-found" : ""}>
+              {message}
+            </h3>
+          )}
 
           {results.map((college) => (
-            <div className="college-card" key={college.id + college.name}>
+            <div className="college-card" key={`${college.id}-${college.name}`}>
               <p>
                 <strong>Cut-off Required:</strong> {college.id}
               </p>

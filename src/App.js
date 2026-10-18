@@ -1,11 +1,10 @@
-// import College from './Components/College';
 import './App.css';
-import Example from './Components/Example';
+import College from './Components/College';
 
 function App() {
   return (
-    <Example/>
-    // <College/>
+    <College />
   );
 }
+
 export default App;
